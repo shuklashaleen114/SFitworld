@@ -94,40 +94,33 @@
     </nav>
     <class class="container">
 
-        <form oninput="bmi.value=(parseFloat(P.value)*parseFloat(R.value)*parseFloat(N.value))/100" align="center">
+        <form oninput="bmi.value=(parseFloat(m.value)/parseFloat(h.value)/parseFloat(h.value))" align="center">
             <table align="center">
                 <tr>
                     <th>
-                        Enter Amoun:
+                        Enter Weight in kg:
                     </th>
                     <th>
-                        <input type="text" id="P" placeholder="in kg">
+                        <input type="text" id="m" placeholder="in kg">
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        Enter percentage
+                        Enter Height in meter
                     </th>
                     <th>
-                        <input type="text" id="R" placeholder="in meter">
+                        <input type="text" id="h" placeholder="in meter">
                     </th>
                 </tr>
-                <tr>
-                    <th>
-                        Enter years
-                    </th>
-                    <th>
-                        <input type="text" id="N" placeholder="in meter">
-                    </th>
-                </tr>
+                
                 <tr>
                     <th>
                         <b>
-                            Your Result is:
+                            Your BMI is:
                         </b>
                     </th>
                     <th>
-                        <output name="bmi" for="s1 s2 s3">
+                        <output name="bmi" for="m h">
                         </output>
                     </th>
                 </tr>
